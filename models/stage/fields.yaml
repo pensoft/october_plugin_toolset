@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: Slug
+        type: text
+        span: left
+    title:
+        label: Title
+        type: text
+        span: right
+    role:
+        label: Role
+        type: dropdown
+        span: left
+        options:
+            researcher: Researcher
+            practitioner: Practitioner

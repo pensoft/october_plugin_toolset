@@ -1,0 +1,15 @@
+title: Stages
+modelClass: Pensoft\Toolset\Models\Stage
+list: $/pensoft/toolset/models/stage/columns.yaml
+recordUrl: pensoft/toolset/stages/update/:id
+noRecordsMessage: No stages found
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: sort_order
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: Search...

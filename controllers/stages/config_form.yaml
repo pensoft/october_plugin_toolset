@@ -1,0 +1,12 @@
+name: Stage
+form: $/pensoft/toolset/models/stage/fields.yaml
+modelClass: Pensoft\Toolset\Models\Stage
+defaultRedirect: pensoft/toolset/stages
+create:
+    title: Create Stage
+    redirect: pensoft/toolset/stages/update/:id
+    redirectClose: pensoft/toolset/stages
+update:
+    title: Edit Stage
+    redirect: pensoft/toolset/stages
+    redirectClose: pensoft/toolset/stages

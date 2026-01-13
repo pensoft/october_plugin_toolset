@@ -1,0 +1,141 @@
+fields:
+    title:
+        label: Title
+        type: text
+        span: left
+        required: true
+    slug:
+        label: 'Slug (URL)'
+        type: text
+        span: right
+        required: true
+        preset:
+            field: title
+            type: slug
+        comment: 'URL-friendly identifier (e.g., human-nature-connection)'
+    role:
+        label: Role
+        type: dropdown
+        span: left
+        required: true
+        placeholder: '-- Select Role --'
+        options:
+            researcher: Researcher
+            practitioner: Practitioner
+    type:
+        label: Type
+        type: dropdown
+        span: right
+        required: true
+        placeholder: '-- Select Type --'
+        options:
+            researcher: 'Researcher Tool'
+            enabler: Enabler
+            constraint: Constraint
+    stage:
+        label: Stage
+        type: relation
+        span: left
+        required: true
+        placeholder: '-- Select Stage --'
+        comment: 'Select the stage this tool belongs to'
+    is_active:
+        label: Active
+        type: switch
+        span: right
+        default: true
+        comment: 'Enable or disable this tool'
+    description:
+        label: 'Short Description'
+        type: textarea
+        size: small
+        span: full
+        comment: 'Brief description of the tool'
+    features:
+        label: 'Features / What''s Included'
+        type: repeater
+        prompt: 'Add feature'
+        span: full
+        form:
+            fields:
+                feature:
+                    label: Feature
+                    type: text
+tabs:
+    fields:
+        intro_question:
+            label: 'Introduction Question'
+            type: text
+            tab: Introduction
+            comment: 'Main question displayed at the top'
+        intro_content:
+            label: 'Introduction Content'
+            type: richeditor
+            tab: Introduction
+            size: large
+        end_goal:
+            label: 'End Goal'
+            type: textarea
+            tab: Goals
+            size: small
+            comment: 'The end goal of this tool'
+        inspiration_title:
+            label: 'Inspiration Title'
+            type: text
+            tab: Inspiration
+            comment: 'Title of the inspiration example'
+        inspiration_content:
+            label: 'Inspiration Content'
+            type: richeditor
+            tab: Inspiration
+            size: large
+        video_url:
+            label: 'Video URL'
+            type: text
+            tab: Inspiration
+            comment: 'YouTube embed URL (e.g., https://www.youtube.com/embed/VIDEO_ID)'
+            placeholder: 'https://www.youtube.com/embed/...'
+        action_steps:
+            label: 'Action Steps'
+            type: repeater
+            tab: 'Action Steps'
+            prompt: 'Add action step'
+            comment: 'Step-by-step guide for taking action'
+            form:
+                fields:
+                    step_title:
+                        label: 'Step Title'
+                        type: text
+                        span: auto
+                    step_content:
+                        label: 'Step content'
+                        size: small
+                        span: auto
+                        type: richeditor
+        transform_with:
+            label: 'Transform With (Stakeholders)'
+            type: repeater
+            tab: Stakeholders
+            prompt: 'Add stakeholder'
+            comment: 'Who should be involved in the transformation?'
+            form:
+                fields:
+                    name:
+                        label: 'Stakeholder Name'
+                        type: text
+                        span: left
+                    description:
+                        label: 'Description (optional)'
+                        type: text
+                        span: right
+        power_dynamics_content:
+            label: 'Power Dynamics Content'
+            type: richeditor
+            tab: 'Power Dynamics'
+            size: large
+        references_content:
+            label: References
+            type: richeditor
+            tab: References
+            size: large
+            comment: 'Academic references and citations'

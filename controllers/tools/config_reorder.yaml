@@ -1,0 +1,3 @@
+title: Reorder Tools
+modelClass: Pensoft\Toolset\Models\Tool
+nameFrom: title

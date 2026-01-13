@@ -1,0 +1,15 @@
+title: Tools
+modelClass: Pensoft\Toolset\Models\Tool
+list: $/pensoft/toolset/models/tool/columns.yaml
+recordUrl: pensoft/toolset/tools/update/:id
+noRecordsMessage: No tools found
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: sort_order
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: Search...

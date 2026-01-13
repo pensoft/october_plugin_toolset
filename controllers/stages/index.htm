@@ -1,0 +1,16 @@
+<?php Block::put('breadcrumb') ?>
+<ul>
+    <li><a href="<?= Backend::url('pensoft/toolset/stages') ?>">Toolset</a></li>
+    <li class="active">Stages</li>
+</ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+<?= $this->listRender() ?>
+
+<?php else: ?>
+
+<p class="flash-message static error"><?= e($this->fatalError) ?></p>
+
+<?php endif ?>

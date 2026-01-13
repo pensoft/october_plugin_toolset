@@ -1,0 +1,18 @@
+name: Tool
+form: $/pensoft/toolset/models/tool/fields.yaml
+modelClass: Pensoft\Toolset\Models\Tool
+
+defaultRedirect: pensoft/toolset/tools
+
+create:
+    title: Create Tool
+    redirect: pensoft/toolset/tools/update/:id
+    redirectClose: pensoft/toolset/tools
+
+update:
+    title: Edit Tool
+    redirect: pensoft/toolset/tools
+    redirectClose: pensoft/toolset/tools
+
+preview:
+    title: Preview Tool

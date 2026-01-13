@@ -1,0 +1,18 @@
+<div data-control="toolbar">
+    <a href="<?= Backend::url('pensoft/toolset/tools/create') ?>" class="btn btn-primary oc-icon-plus">
+        Create Tool
+    </a>
+
+    <button
+        class="btn btn-danger oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).data('request-data', { checked: $('.control-list').listWidget('getChecked') })"
+        data-request="onDelete"
+        data-request-confirm="Are you sure?"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)">
+        Delete
+    </button>
+</div>

@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: ID
+        invisible: true
+
+    title:
+        label: Title
+        searchable: true
+        sortable: true
+
+    name:
+        label: Slug
+        searchable: true
+        sortable: true
+
+    role:
+        label: Role
+        sortable: true
+
+    sort_order:
+        label: Order
+        sortable: true

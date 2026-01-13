@@ -1,0 +1,20 @@
+plugin:
+    name: 'pensoft.toolset::lang.plugin.name'
+    description: 'pensoft.toolset::lang.plugin.description'
+    author: Pensoft
+    icon: icon-wrench
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Toolset
+        url: pensoft/toolset/options
+        icon: icon-wrench
+        sideMenu:
+            side-menu-item:
+                label: Tools
+                url: pensoft/toolset/tools
+                icon: icon-star
+            side-menu-item2:
+                label: Stages
+                url: pensoft/toolset/stages
+                icon: icon-list

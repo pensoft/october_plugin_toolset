@@ -1,10 +1,13 @@
-1.0.1: First version of Toolset
+1.0.1: 'First version of Toolset'
 1.0.2:
-    - Create stages table
+    - 'Create stages table'
     - create_stages_table.php
 1.0.3:
-    - Create tools table
+    - 'Create tools table'
     - create_tools_table.php
 1.0.4:
-    - Seed initial data
+    - 'Seed initial data'
     - seed_initial_data.php
+1.0.5:
+    - 'Updated table pensoft_toolset_tools'
+    - builder_table_update_pensoft_toolset_tools.php

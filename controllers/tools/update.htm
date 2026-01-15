@@ -16,31 +16,32 @@
         <button
             type="submit"
             data-request="onSave"
+            data-request-data="redirect:0"
             data-hotkey="ctrl+s, cmd+s"
-            data-load-indicator="Saving Tool..."
+            data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
             class="btn btn-primary">
-            Save
+            <?= e(trans('backend::lang.form.save')) ?>
         </button>
         <button
             type="button"
             data-request="onSave"
             data-request-data="close:1"
             data-hotkey="ctrl+enter, cmd+enter"
-            data-load-indicator="Saving Tool..."
+            data-load-indicator="<?= e(trans('backend::lang.form.saving')) ?>"
             class="btn btn-default">
-            Save and Close
+            <?= e(trans('backend::lang.form.save_and_close')) ?>
         </button>
         <button
             type="button"
-            class="oc-icon-trash-o btn btn-danger"
+            class="oc-icon-trash-o btn-icon danger pull-right"
             data-request="onDelete"
-            data-load-indicator="Deleting Tool..."
-            data-request-confirm="Are you sure you want to delete this tool?">
-            Delete
+            data-load-indicator="<?= e(trans('backend::lang.form.deleting')) ?>"
+            data-request-confirm="<?= e(trans('backend::lang.form.confirm_delete')) ?>">
         </button>
+
         <span class="btn-text">
-                or <a href="<?= Backend::url('pensoft/toolset/tools') ?>">Cancel</a>
-            </span>
+                    <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('pensoft/toolkit/options') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+                </span>
     </div>
 </div>
 

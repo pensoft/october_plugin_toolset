@@ -16,22 +16,22 @@ fields:
     role:
         label: Role
         type: dropdown
-        span: left
+        span: auto
         required: true
         placeholder: '-- Select Role --'
         options:
             researcher: Researcher
             practitioner: Practitioner
-    type:
-        label: Type
-        type: dropdown
-        span: right
-        required: true
-        placeholder: '-- Select Type --'
+    level:
+        label: 'Intervention level'
         options:
-            researcher: 'Researcher Tool'
-            enabler: Enabler
-            constraint: Constraint
+            Views: Views
+            Structure: Structure
+            'Daily practice': 'Daily practice'
+        emptyOption: '-- choose --'
+        showSearch: true
+        span: auto
+        type: dropdown
     stage:
         label: Stage
         type: relation
@@ -39,28 +39,11 @@ fields:
         required: true
         placeholder: '-- Select Stage --'
         comment: 'Select the stage this tool belongs to'
-    is_active:
-        label: Active
-        type: switch
-        span: right
-        default: true
-        comment: 'Enable or disable this tool'
     description:
-        label: 'Short Description'
-        type: textarea
+        label: 'Short description'
         size: small
-        span: full
-        comment: 'Brief description of the tool'
-    features:
-        label: 'Features / What''s Included'
-        type: repeater
-        prompt: 'Add feature'
-        span: full
-        form:
-            fields:
-                feature:
-                    label: Feature
-                    type: text
+        span: auto
+        type: richeditor
 tabs:
     fields:
         intro_question:

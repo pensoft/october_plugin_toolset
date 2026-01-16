@@ -13,7 +13,8 @@ class Tool extends Model
     protected $jsonable = [
         'features',
         'action_steps',
-        'transform_with'
+        'transform_with',
+        'intro_questions'
     ];
 
     public $rules = [

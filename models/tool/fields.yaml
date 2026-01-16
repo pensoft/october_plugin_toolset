@@ -44,6 +44,18 @@ fields:
         size: small
         span: auto
         type: richeditor
+    intro_questions:
+        label: 'Intro questions'
+        prompt: 'Add new item'
+        style: default
+        span: auto
+        type: repeater
+        form:
+            fields:
+                question:
+                    label: Text
+                    span: auto
+                    type: text
 tabs:
     fields:
         intro_question:

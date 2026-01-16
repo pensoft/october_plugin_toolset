@@ -11,3 +11,5 @@
 1.0.5:
     - 'Updated table pensoft_toolset_tools'
     - builder_table_update_pensoft_toolset_tools.php
+1.0.6:
+    - 'Intro questions'
